@@ -114,13 +114,13 @@
 				<li><a href="Test_Strategy.html">Test Strategies</a></li> 
 				<li><a href="Test_Planning.html">Test Planning</a></li> 
 				<li><a href="Risk_Management.html">Risk Management</a></li>
-				<li><a href="Test_Metrics">Test Metrics</a></li>               
+				<li><a href="Test_Metrics.html">Test Metrics</a></li>              
               </ul>
             </li>           
            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Automation Testing <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="Automation_concepts.html">Concepts</a></li>                
+                <li><a href="Automation_concepts.html">Automation Concepts</a></li>                
                 <!--<li><a href="Automation_Tools">Automation Tools</a></li> 
 				<li><a href="Selenium_main.html">Selenium</a></li> 
 				<li><a href="Python_main.html">Python</a></li> 
@@ -173,7 +173,7 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Templates</h2>
+           <h2>Test Levels</h2>
            </div>
        </div>
      </div>
@@ -186,16 +186,16 @@
        <div class="col-md-12">
          <div class="mu-course-content-area">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-9">
                 <!-- start course content container -->
                 <div class="mu-course-container mu-course-details">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="mu-latest-course-single">
-                        <figure class="mu-latest-course-img_full">
-                          <a href="#"><img src="assets/img/coming_soon.jpg" alt="img"></a>
+                        <figure class="mu-latest-course-img">
+                          <a href="#"><img src="assets/img/concepts/levels.png" alt="img"></a>
                           <div class="mu-latest-course-single-content">
-                          <!--<h2><a href="#">Grouping testing activities  at different stages</a></h2>
+                          <h2><a href="#">Grouping testing activities  at different stages</a></h2>
                           <h3 id="TestLevel">What is a Test Level</h3>
                                                     <p>Testing activities that are organized and managed together are grouped as test levels.In the software development process, there are various stages where software testing is performed.These stages are linked to different phases in a software development life cycle like requirement gathering and analysis, designing, coding , testing till deployment.
                           <p>There are four test levels - Component testing, Integration Testing, System Testing and Acceptance Testing.</p> 		                          <p>Let us try and understand these test levels.</p>
@@ -210,8 +210,10 @@
                           <p>Purpose : To validate that integration between components or systems work as expected. It tests functional requirements and may include specific non functional characteristics such as performance.</p>
 						  <p>Advantage : Integration testing ensures that all integration points are workig correctly. Although the individual units are already tested with unit testing, the integration and communication of these units are verified with integration testing. </p>
 						  <p>There are two levels of integration testing.</p>
-						  <p>1. Component Integration Testing : Testing the interactions between software components. This is performed after component testing.</p>
-						  <p>2. System Integration Testing : Testing the interactions between different systems or between hardware or software. This is done after system testing</p>
+						  <h5 id="Component Integration Testing">1. Component Integration Testing</h5>
+						  <p>Testing the interactions between software components. This is performed after component testing.</p>
+						  <h5 id="SystemIntegrationTesting">2. System Integration Testing</h5>
+						  <p>Testing the interactions between different systems or between hardware or software. This is done after system testing</p>
  						  <p>Team involved: Testers or developers or both can be involved in this testing as per the project scope</p>
 						  <h4 id="SystemTesting">System Testing</h4>
 <p>At this level of software testing process, complete integrated system is tested. The test environment used for system testing should be as close as possible to target or production environment to avoid risk of environment specific failures being missed during the testing</p>
@@ -223,10 +225,14 @@
                           <p>Purpose : To establish confidence in the system, parts of the system or specific non functional characteristic of the system.</p>
 						  <p>Advantage : Acceptance testing evaluate the system's compliance with business requirements and hence provides an indication if the system is ready to be delivered or not. </p>
 						  <p>There are different forms of acceptance testing.</p>
-						  <p>1. User acceptance Testing : Business users verify if the system is fit to use.</p>
-						  <p>2. Operational acceptance Testing : The acceptance of testing performed by system administrators including user management, maintenance tasks, data load and migration tasks etc</p>
-						  <p>3. Contract and regulation acceptance testing: For custom developed software, contract acceptance testing is performed against a contract acceptance criteria. Regulation acceptance testing is performed against any government, safety or legal regulations
-						  <p>4. Alpha and beta testing: Alpha testing is performed at developing organization's site. Beta testing also known as field testing is performed by customers at their own sites.
+						  <h5 id="User acceptance Testing">1. User acceptance Testing</h5>
+						  <p>In this testing, business users verify if the system is fit to use.</p>
+						  <h5 id="Operational acceptance Testing">2. Operational acceptance Testing</h5>
+						  <p>The acceptance of testing performed by system administrators including user management, maintenance tasks, data load and migration tasks etc</p>
+						  <h5 id="Contract and regulation acceptance testing">3. Contract and regulation acceptance testing</h5>
+						  <p>For custom developed software, contract acceptance testing is performed against a contract acceptance criteria. Regulation acceptance testing is performed against any government, safety or legal regulations
+						  <h5 id="Alpha and Beta testing">4. Alpha and Beta testing</h5>
+						  <p>Alpha testing is performed at developing organization's site. Beta testing also known as field testing is performed by customers at their own sites.
  						  <p>Team involved: Customers or users of a system perform this testing. Other stakeholders can also be involved</p>
                        </div>
                       </div> 
@@ -235,7 +241,48 @@
                 </div>
                 <!-- end course content container -->
                 
-                         </div>
+              </div>
+              <div class="col-md-3">
+                <!-- start sidebar -->
+                <aside class="mu-sidebar">
+                  <!-- start single sidebar -->
+                  <div class="mu-single-sidebar">
+                    <h3>Terminology</h3>
+                    <ul class="mu-sidebar-catg">
+                      <li><a href="#ComponentTesting" >Component Testing</a></li>
+                      <li><a href="#ComponentTesting">Unit Testing</a></li>
+                      <li><a href="#ComponentTesting">Module Testing</a></li>
+                      <li><a href="#ComponentTesting">Program Testing</a></li>
+                      <li><a href="#IntegrationTesting">Integration Testing</a></li>
+                      <li><a href="#Component Integration Testing">Component Integration Testing</a></li>
+					  <li><a href="#SystemIntegrationTesting">System Integration Testing</a></li>
+					  <li><a href="#SystemTesting">System Testing</a></li>
+					  <li><a href="#AcceptanceTesting">Acceptance Testing</a></li>
+					  <li><a href="#User acceptance Testing">User Acceptance Testing</a></li>
+					  <li><a href="#Operational acceptance Testing">Operational (acceptance) Testing</a></li>
+					  <li><a href="#Contract and regulation acceptance testing">Contract and Regulation Acceptance Testing</a></li>
+					  <li><a href="#Alpha and Beta testing">Alpha Testing</a></li>
+					  <li><a href="#Alpha and Beta testing">Beta Testing</a></li>
+					  <li><a href="#Alpha and Beta testing">Field Testing</a></li>
+                    </ul>
+                  </div>
+                  <!-- end single sidebar -->
+                  <!-- start single sidebar -->
+                  <div class="mu-single-sidebar">
+                    <h3>Related terms</h3>
+					<ul class="mu-sidebar-catg">
+                    <div class="mu-sidebar-catg">
+                      <li><a href="#">Functional Testing</a></li>
+                      <li><a href="#">Non-functional Testing</a></li>
+                      <li><a href="#">Robustness Testing</a></li>
+                      <li><a href="#">Structural Testing </a></li>
+                      </div>
+					</ul>
+                  </div>
+                  <!-- end single sidebar -->
+                </aside>
+                <!-- / end sidebar -->
+             </div>
            </div>
          </div>
        </div>
