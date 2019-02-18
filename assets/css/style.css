@@ -1225,7 +1225,7 @@ img {
 #mu-course-content .mu-course-content-area .mu-sidebar {
   display: inline;
   float: left;
-  width: 100%;
+  width: 250px;
   position: fixed;
 }
 #mu-course-content .mu-course-content-area .mu-sidebar .mu-single-sidebar {
