@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+  
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main style sheet -->
+    <link href="assets/css/style.css" rel="stylesheet">    
+
+   
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start menu -->
+  <section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">  
+     <div class="container" style="   width: 1255px;
+    display: flex;
+    align-items: center;">
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="index.html">    <img src="assets/img/logo.jpg" alt="logo" /></a>
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- IMG BASED LOGO  -->
+          <!--<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
+        </div>
+       <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Home</a></li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Testing Concepts <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="Fundamentals.html">Fundamentals</a></li>                
+                <li><a href="Test_Levels.html">Test Levels</a></li> 
+				<li><a href="Testing_Types.html">Testing Types</a></li> 
+				<li><a href="Testing_Process.html">Testing Process</a></li> 
+				<li><a href="Test_Strategy.html">Test Strategies</a></li> 
+				<li><a href="Test_Planning.html">Test Planning</a></li> 
+				<li><a href="Risk_Management.html">Risk Management</a></li>
+				<li><a href="Test_Metrics.html">Test Metrics</a></li>              
+              </ul>
+            </li>           
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Automation Testing <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="Automation_concepts.html">Automation Concepts</a></li>                
+                <!--<li><a href="Automation_Tools">Automation Tools</a></li> 
+				<li><a href="Selenium_main.html">Selenium</a></li> 
+				<li><a href="Python_main.html">Python</a></li> 
+				<li><a href="SoapUI_main.html">SoapUI</a></li> -->               
+              </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Certifications <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+               <!-- <li><a href="ISTQB_foundation.html">ISTQB Foundation Level</a></li>                
+                <li><a href="ISTQB_TA.html">ISTQB Advanced - Test Analyst</a></li> 
+				<li><a href="ISTQB_TTA.html">ISTQB Advanced - Technical Test Analyst</a></li> 
+				<li><a href="ISTQB_TM.html">ISTQB Advanced - Test Manager</a></li> -->
+              </ul>
+            </li>            
+            <li><a href="video_tutorials.html">Video Tutorials</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Question Bank <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+               <!-- <li><a href="ISTQB_Dumps.html">ISTQB questions</a></li>  -->              
+                <li><a href="Interview_questions.html">Interview_questions</a></li> 
+				</ul>
+            </li>
+            <li><a href="404.html">Templates</a></li>               
+            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->        
+      </div>     
+    </nav>
+  </section>
+  <!-- End menu -->
+  <!-- Start search box -->
+  <div id="mu-search">
+    <div class="mu-search-area">      
+      <button class="mu-search-close"><span class="fa fa-close"></span></button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">            
+            <form class="mu-search-form">
+              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End search box -->
+ <!-- Page breadcrumb -->
+ <section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Black Box Testing </h2>
+           </div>
+       </div>
+     </div>
+   </div>
+    </section>
+ <!-- End breadcrumb -->
+ <section id="mu-course-content">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-course-content-area">
+            <div class="row">
+              <div class="col-md-9">
+                <!-- start course content container -->
+                <div class="mu-course-container mu-course-details">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="mu-latest-course-single">
+                        <h3 id="TestLevel"><b>What is Black Box Testing</b></h3>
+                          <p>When we test a component/software system/application to ascertain if it produces the expected outcome without looking at the internal code implementation,
+                              then this method of testing is known as black box testing. But let's understand why is this called black box testing.
+                              This is because the item under test is like a black box to us, we can't really see what is inside it.
+                              We just know that given x inputs , the system should provide us y outputs. This testing method is both <b>functional</b> and <b> non functional</b>.
+                              At one hand, we can check for the expected functional behaviour and on the other hand we can also test if non-functional characteristics like
+                              performance etc is as per requirements.</p>
+                            <p> Black box testing is also known as <b>Specification-based testing, opaque-boxed or closed-box testing</b></p>
+                            <h4><b>Example to understand Black box testing.</b></h4>
+                            <p>Imagine a new android mobile phone is launched in the market and as a tester you have been asked to test it. Few of the specifications are as below: </p>
+                            <p> -> The user is able to make calls . (Functional)</p>
+                            <p>  -> The user is able to click pictures through camera (Functional) etc ..</p>
+                            <p>  -> The mobile phone doesn't get heated after being continuously used for 4 hours (Non functional)</p>
+                            <p>The testing of all above features doesn't require any knowledge of the code and is hence black box testing</p>
+                            </div>
+                            </div>
+                             <div class="mu-latest-course-single">
+                                    <figure class="mu-latest-course-img">
+                                        <a href="#"><img src="assets/img/concepts/blackbox1.JPG" alt="img"></a>
+                                        </figure>
+                                </div>
+                            </div>
+                                 <div class="mu-latest-course-single">
+                                        <h4><b>Test levels applicable</b></h4>
+                              <p>Black box testing method can be applied to all levels of software testing : Component testing, Integration testing,
+                                  system testing and acceptance testing.</p>
+                              <h4 id="Black box techniques"><b>Black Box test design techniques</b></h4>
+            <p>Black box test design techniques are the procedure used to derive test cases on the basis of functional or non-functional specifications of
+    a component or system without referencing the internal structure or code.</p>
+                              <p>Different black box test design techniques are as follows. Their detailed description can be found by clicking on the names below </p>
+                                     <h5 id="Equivalence partitioning"><b>1. Equivalence partitioning</b></h5>
+                                     <p> The inputs to the system or software that have the same expected behaviour are grouped together.
+                                         This is done so that they are used in the same way. These are known as equivalence partitions or classes.</p>
+                                         <p>Let's take an example, in an online application form for club membership, the user needs to enter his/her age.
+                                         The club membership can only be taken if you are 18 or above till 65 years only.The range of the age is to be considered
+                                         between 0to 100. Now let's go through some related points below.</p>
+                                     <p>1.Equivalence classes are created for valid data i.e the data that would accepted.</p>
+                                     <p>The valid equivalence class would be [18,65] inclusive.</p>
+                                     <p>2.Equivalence classes are created for invalid data i.e. the data which will be rejected.</p>
+                                     <p>The invalid equivalence classes would be [0,18[ (0 to less than 18),]65,100]( greater than 65 to 100)</p>
+                                     <p>3.Equivalence classes can be created for output values, internal values and interface parameters also.</p>
+                            <p>4. Equivalence classes can be applied at all test levels. </p>
+                                     <h5 id="Boundary value"><b>2. Boundary value analysis</b></h5>
+                                     <p>Boundaries at equivalence partitions and other test data are critical areas to be tested as there are good
+                                     chances of catching defects there. The maximum and minimum values of equivalence partition are the boundary values.
+                                         This technique normally supplements equivalence partitioning and other black box test design techniques.</p>
+                                     <p>In the example above given for equivalence partitioning ,the boundary values 18 and 65 are the boundary values which
+                                     needs to be tested. It's a common error in the code that >, <, == are used incorrectly which can be caught using these
+                                     boundary values.</p>
+                                     <h5 id="Decision table"><b>3. Decision table</b></h5>
+                                     <p> When the system requirements contain logical conditions or complex business rules , decision tables are effective way of testing
+                                         such conditions. This is also known as <b> Cause effect table.</b>The related important points are below</p>
+                                     <p>1. To create decision table, analyse the specifications.</p>
+                                     <p>2. The inputs in the form of conditions and actions are normally specified as boolean i.e. can be true or false.</p>
+                                     <p>3. The decision table will contain input conditions and associated actions .</p>
+                                     <p>4. Each column of the decision table contains a business rule with combinations of input variables which would result into
+                                         actions associated with that business rule.</p>
+                                     <p>5. All the columns in the decision table need to be considered as test cases to ensure full coverage</p>
+                                     <p> Let's extend our example taken under Equivalence partitioning. The rules goes like this: </p>
+                                     <p> Specification says : No discounts can be given unless discount eligibility is met. After the eligibility criteria is met,
+                                         provide 20% discount for army personnel and 25% for disadvantaged category</p>
+                                     <p>There will be 4 rules. The first condition (Is the eligibility criteria met?) has two possible outcomes, yes or no.
+                                         The second condition (type of discount) has two possible outcomes, Army Personnel (A) or Disadvantage Category (D)
+                                         Two times two is four. These are the four test cases to be considered. Please refer to the figure below for the table details.</p>
+                                     <div class="mu-latest-course-single">
+                                         <figure class="mu-latest-course-img">
+                                             <a href="#"><img src="assets/img/concepts/bbdesign1.png" alt="img"></a>
+                                         </figure>
+                                     </div>
+                                     <h5 id="State transition"><b>4. State-transition testing</b></h5>
+                                     <p>This testing is primarily used for systems which may exhibit different behaviour based on current or previous states.
+                                     State transition diagrams help in understanding and testing these systems. The main items are as follows: </p>
+                                     <p>1. States of the software</p>
+                                     <p>2. Transitions between states </p>
+                                     <p>3. The events or inputs which trigger these transitions or state changes</p>
+                                     <p>4. Actions resulting from these transitions</p>
+                                     <p> State table shows these components and also invalid transitions. The idea is to test all states, all transitions along with invalid
+                                         transitions. State transition testing is used normally for embedded software
+                                         and technical automation. Let us take an example from the figure below.</p>
+                                     <div class="mu-latest-course-single">
+                                         <figure class="mu-latest-course-img">
+                                             <a href="#"><img src="assets/img/concepts/bbdesign2.png" alt="img"></a>
+                                         </figure>
+                                     </div>
+
+                                     <h5 id="Use case Testing"><b>5. Use Case Testing</b></h5>
+                           <p>Use case testing is used to derive test cases from use cases to uncover defects in the process flows
+                           which might occur during the real world use of the system. Related points are mentioned below</p>
+                                     <p>1. Users or systems in use cases are termed as actors</p>
+                                     <p>2. The interactions between these actors produce results to the customer or system user</p>
+                                     <p>3. Each use case has preconditions (necessarily to be met before) and post conditions with results </p>
+                                     <p>4. The use cases have main and alternative scenarios.</p>
+                                     <p> Lets take an example by considering the ATM PIN scenario taken in the figure above</p>
+                                     <div class="mu-latest-course-single">
+                                         <figure class="mu-latest-course-img">
+                                             <a href="#"><img src="assets/img/concepts/bbdesign3.png" alt="img"></a>
+                                         </figure>
+                                     </div>
+
+                                    <p></p>
+                            <h4><b>Advantages of Black Box testing</b></h4>
+                            <p>1. Test activities can be started after the specifications are complete.</p>
+                            <p>2. As this method is specification based, discrepancies can be found in specifications.</p>
+                            <p>3. The testing team performs this testing independently without having any bias towards implementation thus achieving testing objectives efficiently. </p>
+                            <p>4. Testers with limited programing knowledge can also perform this testing.<p>
+                            <p>5. As this is applied at integration testing level, communication between components or systems can be validated.</p>
+                            <p></p>
+                                    <h4><b>Disadvantages of Black Box testing</b></h4>
+                            <p>1. There are always chances of program paths being missed out. The code can contain dead code, unreachable code or redundant code which will not be uncovered using this method. </p>
+                            <p>2. This method requires specifications to be written completely . If this is not the case, test case designing may be difficult and can lead to incomplete testing.</p>
+                             </div>
+                             </div>
+                    </div>
+                   <!-- end course content container -->
+               <div class="col-md-3">
+               <!-- start sidebar -->
+               <aside class="mu-sidebar" >
+                  <!-- start single sidebar-->
+                  <div class="mu-single-sidebar" >
+                    <h3>Black box test design techniques</h3>
+                    <ul class="mu-sidebar-catg">
+                        <li><a href="#Equivalence partitioning" >Equivalence partitioning</a></li>
+                        <li><a href="#Boundary value">Boundary value analysis</a></li>
+                        <li><a href="#Decision table">Decision Table</a></li>
+                        <li><a href="#State transition">State-transition testing</a></li>
+                        <li><a href="#Use case Testing">Use case testing</a></li>
+                    </ul>
+                  </div>
+                  <!-- end single sidebar-->
+                </aside>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>-->
+     </section>
+
+
+  <!-- Start footer -->
+  <footer id="mu-footer">
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+      <div class="container">
+        <div class="mu-footer-top-area">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">Meet the team</a></li>
+                 <!-- <li><a href="">Features</a></li>
+                  <li><a href="">Course</a></li>
+                  <li><a href="">Event</a></li>
+                  <li><a href="">Sitemap</a></li>-->
+                  <li><a href="">Terms Of Use</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contributions</h4>
+                <ul>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <!--<li><a href="">Download Files</a></li>
+                  <li><a href="">Latest Course</a></li>
+                  <li><a href="">Academic News</a></li>  -->                
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Feedback</h4>
+                <p>We would love to hear from you to improve</p>
+                <form class="mu-subscribe-form">
+                  <input type="email" placeholder="Type your Email">
+                  <button class="mu-subscribe-btn" type="submit">Send Email!</button>
+                </form>               
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contact Us</h4>
+                <address>
+                  <!--<p>P.O. Box 320, Ross, California 9495, USA</p>
+                  <p>Phone: (415) 453-1568 </p>-->
+                  <p>Website: www.testingguidance.com</p>
+                  <!--<p>Email: sendtomegha@gmail.com</p>-->
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+      <div class="container">
+        <div class="mu-footer-bottom-area">
+          <!--<p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>-->
+        </div>
+      </div>
+    </div>
+    <!-- end footer bottom -->
+  </footer>
+  <!-- End footer -->
+  
+  <!-- jQuery library -->
+  <script src="assets/js/jquery.min.js"></script>  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>   
+  <!-- Slick slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>  
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+  
+  
+  <!-- Custom js -->
+  <script src="assets/js/custom.js"></script> 
+
+  </body>
+</html>

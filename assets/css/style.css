@@ -1226,7 +1226,7 @@ img {
   display: inline;
   float: left;
   width: 250px;
-  position: fixed;
+  <!--position: fixed;-->
 }
 #mu-course-content .mu-course-content-area .mu-sidebar .mu-single-sidebar {
   background-color: #FFF;
