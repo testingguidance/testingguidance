@@ -134,7 +134,7 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Black Box Testing </h2>
+           <h2>White Box Testing </h2>
            </div>
        </div>
      </div>
@@ -153,116 +153,69 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="mu-latest-course-single">
-                        <h3 id="TestLevel"><b>What is Black Box Testing</b></h3>
-                          <p>When we test a component/software system/application to ascertain if it produces the expected outcome without looking at the internal code implementation,
-                              then this method of testing is known as black box testing. But let's understand why is this called black box testing.
-                              This is because the item under test is like a black box to us, we can't really see what is inside it.
-                              We just know that given x inputs , the system should provide us y outputs. This testing method is both <b>functional</b> and <b> non functional</b>.
-                              At one hand, we can check for the expected functional behaviour and on the other hand we can also test if non-functional characteristics like
-                              performance etc is as per requirements.</p>
-                            <p> Black box testing is also known as <b>Specification-based testing, opaque-boxed or closed-box testing</b></p>
-                            <h4><b>Example to understand Black box testing.</b></h4>
-                            <p>Imagine a new android mobile phone is launched in the market and as a tester you have been asked to test it. Few of the specifications are as below: </p>
-                            <p> -> The user is able to make calls . (Functional)</p>
-                            <p>  -> The user is able to click pictures through camera (Functional) etc ..</p>
-                            <p>  -> The mobile phone doesn't get heated after being continuously used for 4 hours (Non functional)</p>
-                            <p>The testing of all above features doesn't require any knowledge of the code and is hence black box testing</p>
+                        <h3 id="TestLevel"><b>What is White-box Testing</b></h3>
+                          <p>When we test the internal structure of a component or system by looking at the implementation,
+                              then this method of testing is known as white-box testing. But let's understand why is this called white box testing.
+                              This is because the item under test is like a white or transparent box to us, inside which the tester can clearly see.
+                              The tester provides inputs , exercise paths through the code and check the appropriate outputs.<p>
+                            <p> White-box testing is also known as <b>Structure-based testing, glass box or transparent box testing</b></p>
                             </div>
                             </div>
-                             <div class="mu-latest-course-single">
-                                    <figure class="mu-latest-course-img">
-                                        <a href="#"><img src="assets/img/concepts/blackbox1.JPG" alt="img"></a>
-                                        </figure>
-                                </div>
-                            </div>
+                             </div>
                                  <div class="mu-latest-course-single">
                                         <h4><b>Test levels applicable</b></h4>
-                              <p>Black box testing method can be applied to all levels of software testing : Component testing, Integration testing,
-                                  system testing and acceptance testing.</p>
-                              <h4 id="Black box techniques"><b>Black Box test design techniques</b></h4>
-            <p>Black box test design techniques are the procedure used to derive test cases on the basis of functional or non-functional specifications of
-    a component or system without referencing the internal structure or code.</p>
-                              <p>Different black box test design techniques are as follows.</p>
-                                     <h5 id="Equivalence partitioning"><b>1. Equivalence partitioning</b></h5>
-                                     <p> The inputs to the system or software that have the same expected behaviour are grouped together.
-                                         This is done so that they are used in the same way. These are known as equivalence partitions or classes.</p>
-                                         <p>Let's take an example, in an online application form for club membership, the user needs to enter his/her age.
-                                         The club membership can only be taken if you are 18 or above till 65 years only.The range of the age is to be considered
-                                         between 0to 100. Now let's go through some related points below.</p>
-                                     <p>1.Equivalence classes are created for valid data i.e the data that would accepted.</p>
-                                     <p>The valid equivalence class would be [18,65] inclusive.</p>
-                                     <p>2.Equivalence classes are created for invalid data i.e. the data which will be rejected.</p>
-                                     <p>The invalid equivalence classes would be [0,18[ (0 to less than 18),]65,100]( greater than 65 to 100)</p>
-                                     <p>3.Equivalence classes can be created for output values, internal values and interface parameters also.</p>
-                            <p>4. Equivalence classes can be applied at all test levels. </p>
-                                     <h5 id="Boundary value"><b>2. Boundary value analysis</b></h5>
-                                     <p>Boundaries at equivalence partitions and other test data are critical areas to be tested as there are good
-                                     chances of catching defects there. The maximum and minimum values of equivalence partition are the boundary values.
-                                         This technique normally supplements equivalence partitioning and other black box test design techniques.</p>
-                                     <p>In the example above given for equivalence partitioning ,the boundary values 18 and 65 are the boundary values which
-                                     needs to be tested. It's a common error in the code that >, <, == are used incorrectly which can be caught using these
-                                     boundary values.</p>
-                                     <h5 id="Decision table"><b>3. Decision table</b></h5>
-                                     <p> When the system requirements contain logical conditions or complex business rules , decision tables are effective way of testing
-                                         such conditions. This is also known as <b> Cause effect table.</b>The related important points are below</p>
-                                     <p>1. To create decision table, analyse the specifications.</p>
-                                     <p>2. The inputs in the form of conditions and actions are normally specified as boolean i.e. can be true or false.</p>
-                                     <p>3. The decision table will contain input conditions and associated actions .</p>
-                                     <p>4. Each column of the decision table contains a business rule with combinations of input variables which would result into
-                                         actions associated with that business rule.</p>
-                                     <p>5. All the columns in the decision table need to be considered as test cases to ensure full coverage</p>
-                                     <p> Let's extend our example taken under Equivalence partitioning. The rules goes like this: </p>
-                                     <p> Specification says : No discounts can be given unless discount eligibility is met. After the eligibility criteria is met,
-                                         provide 20% discount for army personnel and 25% for disadvantaged category</p>
-                                     <p>There will be 4 rules. The first condition (Is the eligibility criteria met?) has two possible outcomes, yes or no.
-                                         The second condition (type of discount) has two possible outcomes, Army Personnel (A) or Disadvantage Category (D)
-                                         Two times two is four. These are the four test cases to be considered. Please refer to the figure below for the table details.</p>
+                              <p>White-box testing method can be applied to Component testing, Integration testing and
+                                  system testing. Some examples of white-box testing at different levels are as follows:</p>
+                                     <p>1. Component Testing : Software component's structure like statements, decisions, paths or branches.</p>
+                                     <p>2. Integration Testing : Call tree structure</p>
+                                     <p>3. System Testing : Any structure like web page structure, menu structure or business process.</p>
                                      <div class="mu-latest-course-single">
                                          <figure class="mu-latest-course-img">
-                                             <a href="#"><img src="assets/img/concepts/bbdesign1.png" alt="img"></a>
+                                             <a href="#"><img src="assets/img/concepts/whitebox1.png" alt="img"></a>
                                          </figure>
                                      </div>
-                                     <h5 id="State transition"><b>4. State-transition testing</b></h5>
-                                     <p>This testing is primarily used for systems which may exhibit different behaviour based on current or previous states.
-                                     State transition diagrams help in understanding and testing these systems. The main items are as follows: </p>
-                                     <p>1. States of the software</p>
-                                     <p>2. Transitions between states </p>
-                                     <p>3. The events or inputs which trigger these transitions or state changes</p>
-                                     <p>4. Actions resulting from these transitions</p>
-                                     <p> State table shows these components and also invalid transitions. The idea is to test all states, all transitions along with invalid
-                                         transitions. State transition testing is used normally for embedded software
-                                         and technical automation. Let us take an example from the figure below.</p>
+                                     <h4 id="White box techniques"><b>White Box test design techniques</b></h4>
+            <p>White-box test design techniques are the procedure used to derive test cases on the basis of analysis of the internal structure of a component or a system.</p>
+                              <p>Different white-box test design techniques are as follows. </p>
+                                     <h5 id="Statement Testing"><b>1. Statement Testing and Coverage</b></h5>
+                                     <p> Statement coverage determines the percentage of executable statements that are exercised by a test case suite.
+                                         It is calculated as Number of statements exercised/Total number of statements.
+                                         Execution is done in a way that at least each statement in the code is executed once . This is normally measured
+                                     with the help of a software tool.</p>
+                                     <h5 id="Decision Testing"><b>2. Decision Testing and coverage</b></h5>
+                                     <p>Decision coverage determines the percentage of decision outcomes that are exercised by a test case suite.
+                                         It is calculated as Number of decision outcomes covered by test cases/Total number of possible decision outcomes in the code.
+                                         Branch testing is related to this coverage.Decision testing is a kind of control flow testing as a particular flow of control
+                                     through the decision points is tested. Decision coverage provides better coverage than statement coverage. </p>
+                                     <h5 id="Condition Coverage"><b>3. Condition Coverage</b></h5>
+                                     <p> Condition coverage determines the percentage of condition outcomes that are exercised by a test case suite. A condition is a logical expression
+                                         which can be evaluated as True or False.When each of the condition in a decision statement is set to true and false once then it leads to 100% condition coverage.</p>
+                                      <h5 id="Modified condition decision coverage"><b>4. Modified condition decision coverage</b></h5>
+                                     <p>Modified condition decision coverage determines the percentage of all conditions which independently affect the decision result
+                                         that are exercised by a test case suite. All the conditions are tested for True and False value and each should affect the
+                                     decision outcome independently. It is basically used in avionics testing as per DO178B. It is also known as<b> Modified multiple condition coverage</b></p>
+                                     <p></p>
+                                     <p>The above coverage techniques are sometimes confusing. So, let's try to understand these by taking a single example in the pictures below</p>
+                                      <div class="mu-latest-course-single">
+                                         <figure class="mu-latest-course-img">
+                                             <a href="#"><img src="assets/img/concepts/whitebox2.png" alt="img"></a>
+                                         </figure>
+                                     </div>
                                      <div class="mu-latest-course-single">
                                          <figure class="mu-latest-course-img">
-                                             <a href="#"><img src="assets/img/concepts/bbdesign2.png" alt="img"></a>
+                                             <a href="#"><img src="assets/img/concepts/whitebox3.png" alt="img"></a>
                                          </figure>
                                      </div>
-
-                                     <h5 id="Use case Testing"><b>5. Use Case Testing</b></h5>
-                           <p>Use case testing is used to derive test cases from use cases to uncover defects in the process flows
-                           which might occur during the real world use of the system. Related points are mentioned below</p>
-                                     <p>1. Users or systems in use cases are termed as actors</p>
-                                     <p>2. The interactions between these actors produce results to the customer or system user</p>
-                                     <p>3. Each use case has preconditions (necessarily to be met before) and post conditions with results </p>
-                                     <p>4. The use cases have main and alternative scenarios.</p>
-                                     <p> Lets take an example by considering the ATM PIN scenario taken in the figure above</p>
-                                     <div class="mu-latest-course-single">
-                                         <figure class="mu-latest-course-img">
-                                             <a href="#"><img src="assets/img/concepts/bbdesign3.png" alt="img"></a>
-                                         </figure>
-                                     </div>
-
-                                    <p></p>
-                            <h4><b>Advantages of Black Box testing</b></h4>
-                            <p>1. Test activities can be started after the specifications are complete.</p>
-                            <p>2. As this method is specification based, discrepancies can be found in specifications.</p>
-                            <p>3. The testing team performs this testing independently without having any bias towards implementation thus achieving testing objectives efficiently. </p>
-                            <p>4. Testers with limited programing knowledge can also perform this testing.<p>
-                            <p>5. As this is applied at integration testing level, communication between components or systems can be validated.</p>
+                                     <p></p>
+                            <h4><b>Advantages of White Box testing</b></h4>
+                            <p>1. This is a good candidate for test automation.</p>
+                            <p>2. Testing can be started at early stage without GUI even being complete.</p>
+                            <p>3. More thorough testing can be achieved as we cover most code paths.</p>
                             <p></p>
-                                    <h4><b>Disadvantages of Black Box testing</b></h4>
-                            <p>1. There are always chances of program paths being missed out. The code can contain dead code, unreachable code or redundant code which will not be uncovered using this method. </p>
-                            <p>2. This method requires specifications to be written completely . If this is not the case, test case designing may be difficult and can lead to incomplete testing.</p>
+                                    <h4><b>Disadvantages of White Box testing</b></h4>
+                            <p>1. Highly skilled resources with good programming knowledge are required since these tests are complex tests</p>
+                            <p>2. Tools availability for each type of application can be difficult.</p>
+                                     <p>3. The main focus remains on the software and missing functionality may not be uncovered as a result.</p>
                              </div>
                              </div>
                     </div>
@@ -272,13 +225,12 @@
                <aside class="mu-sidebar" >
                   <!-- start single sidebar-->
                   <div class="mu-single-sidebar" >
-                    <h3>Black box test design techniques</h3>
+                    <h3>White box test design techniques</h3>
                     <ul class="mu-sidebar-catg">
-                        <li><a href="#Equivalence partitioning" >Equivalence partitioning</a></li>
-                        <li><a href="#Boundary value">Boundary value analysis</a></li>
-                        <li><a href="#Decision table">Decision Table</a></li>
-                        <li><a href="#State transition">State-transition testing</a></li>
-                        <li><a href="#Use case Testing">Use case testing</a></li>
+                        <li><a href="#Statement Testing" >Statement Coverage</a></li>
+                        <li><a href="#Decision Testing">Decision Coverage</a></li>
+                        <li><a href="#Condition Coverage">Condition Coverage</a></li>
+                        <li><a href="#Modified condition decision coverage">Modified condition decision coverage</a></li>
                     </ul>
                   </div>
                   <!-- end single sidebar-->
