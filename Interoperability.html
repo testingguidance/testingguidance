@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+  
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main style sheet -->
+    <link href="assets/css/style.css" rel="stylesheet">    
+
+   
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start menu -->
+  <section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">  
+     <div class="container" style="   width: 1255px;
+    display: flex;
+    align-items: center;">
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="index.html">    <img src="assets/img/logo.jpg" alt="logo" /></a>
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- IMG BASED LOGO  -->
+          <!--<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
+        </div>
+       <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Home</a></li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Testing Concepts <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="Fundamentals.html">Fundamentals</a></li>                
+                <li><a href="Test_Levels.html">Test Levels</a></li> 
+				<li><a href="Testing_Types.html">Testing Types</a></li> 
+				<li><a href="Testing_Process.html">Testing Process</a></li> 
+				<li><a href="Test_Strategy.html">Test Strategies</a></li> 
+				<li><a href="Test_Planning.html">Test Planning</a></li> 
+				<li><a href="Risk_Management.html">Risk Management</a></li>
+				<li><a href="Test_Metrics.html">Test Metrics</a></li>              
+              </ul>
+            </li>           
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Automation Testing <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="Automation_concepts.html">Automation Concepts</a></li>                
+                <!--<li><a href="Automation_Tools">Automation Tools</a></li> 
+				<li><a href="Selenium_main.html">Selenium</a></li> 
+				<li><a href="Python_main.html">Python</a></li> 
+				<li><a href="SoapUI_main.html">SoapUI</a></li> -->               
+              </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Certifications <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+               <!-- <li><a href="ISTQB_foundation.html">ISTQB Foundation Level</a></li>                
+                <li><a href="ISTQB_TA.html">ISTQB Advanced - Test Analyst</a></li> 
+				<li><a href="ISTQB_TTA.html">ISTQB Advanced - Technical Test Analyst</a></li> 
+				<li><a href="ISTQB_TM.html">ISTQB Advanced - Test Manager</a></li> -->
+              </ul>
+            </li>            
+            <li><a href="video_tutorials.html">Video Tutorials</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Question Bank <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+               <!-- <li><a href="ISTQB_Dumps.html">ISTQB questions</a></li>  -->              
+                <li><a href="Interview_questions.html">Interview_questions</a></li> 
+				</ul>
+            </li>
+            <li><a href="404.html">Templates</a></li>               
+            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->        
+      </div>     
+    </nav>
+  </section>
+  <!-- End menu -->
+  <!-- Start search box -->
+  <div id="mu-search">
+    <div class="mu-search-area">      
+      <button class="mu-search-close"><span class="fa fa-close"></span></button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">            
+            <form class="mu-search-form">
+              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End search box -->
+ <!-- Page breadcrumb -->
+ <section id="mu-page-breadcrumb">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-page-breadcrumb-area">
+           <h2>Interoperability Testing </h2>
+           </div>
+       </div>
+     </div>
+   </div>
+    </section>
+ <!-- End breadcrumb -->
+ <section id="mu-course-content">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-course-content-area">
+            <div class="row">
+              <div class="col-md-9">
+                <!-- start course content container -->
+                <div class="mu-course-container mu-course-details">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="mu-latest-course-single">
+                        <h3 id="TestLevel"><b>What is Interoperability Testing</b></h3>
+                          <p>When we perform tests to validate interoperability of a software system, it is called as interoperability testing.
+                              Interoperability is basically the ability of the software product/component/system to interact with another product/component/system.
+                          During this interaction, there should be seamless communication between these two entities without any data loss or performance issues.
+                          These are the main aspects we test during interoperability testing. </p>
+                          <h4><b>Purpose of interoperability testing</b></h4>
+                          <p>1.The primary purpose is to make sure that the end to end functionality between the
+                          communicating entities are as per the required requirements or standards.</p>
+                          <p>2.The data should be routed back and forth between different entities without any loss of data or functionality.</p>
+                          <p>3.This testing helps in providing good accessibility resulting in obtaining good test results. </p>
+                          <h4><b>Example of interoperability testing</b></h4>
+                          <p>Let us take an example to understand it better. In our day to day life, we use internet banking for different banking needs. Many times, we transfer funds to accounts from different banks.
+                          For that purpose, we add payee and make the transfer without bothering how these different banks would make this transaction successful. It might be the case
+                          that these two banks have software on entirely different platforms, use altogether different architecture and implementation. As long as they are able to
+                          communicate to each other without any issues , preserve the data integrity and perform the intended function i.e. transfer of funds from one account to another, they are interoperable.
+                          From this example , we can understand how important this testing type is and thus lets explore it further.</p>
+                          <div class="mu-latest-course-single">
+                              <figure class="mu-latest-course-img">
+                                  <a href="#"><img src="assets/img/concepts/inter1.png" alt="img"></a>
+                              </figure>
+                          </div>
+                          <h4><b>Levels of software interoperability testing</b></h4>
+                                     <h5 id="Data-type Interoperability"><b>1. Data-type Interoperability</b></h5>
+                                     <p>The data types, format of the data are validated in this testing across different systems . All the incoming and outgoing data from the other system or application
+                                         should be recognized and sustained accurately. In the banking example above, the amount transferred in numbers should be received in numbers only.</p>
+                          <h5 id="Physical Interoperability"><b>2. Physical Interoperability</b></h5>
+                                     <p>When we test communication between physical devices with software like USB port compatibility, data cable or HDMI port compatibility , then it comes under
+                                         physical interoperability testing. It ensures physical sufficiency to logically connect two devices.</p>
+                          <h5 id="Specification level Interoperability"><b>3. Specification level Interoperability</b></h5>
+                          <p>When we verify the device specifications like data format used between software systems etc then this is called as
+                                         Specification level testing.</p>
+                          <h5 id="Semantic Interoperability"><b>4. Semantic Interoperability</b></h5>
+                                     <p>When we test the data semantics or underlying algorithm, syntax of the program then this is called as
+                                         semantic level testing.</p>
+                                         <div class="mu-latest-course-single">
+                                         <figure class="mu-latest-course-img">
+                                             <a href="#"><img src="assets/img/concepts/opera3.png" alt="img"></a>
+                                         </figure>
+                                     </div>
+                                     <h4><b>Advantages of Interoperability testing</b></h4>
+                                     <p>1. The testing of communication between different systems or applications with different implementations or platforms provide confidence in the use of these systems.
+                                         Specially in the medical field, this holds an important role to ensure all different devices would work together as expected.</p>
+                                     <p>2. Interoperability testing ensures enhanced reliability for instance electric systems reliability by validating information flow between portions of the grid,
+                                         ability of power system components to work together effectively.</p>
+                                     <p></p>
+                                     <h4><b>Challenges of Interoperability testing</b></h4>
+                                     <p>1. The networking can be complex as two or more subsystems from different vendors need to be connected.</p>
+                                     <p>2. As different systems are involved, it becomes difficult to find out the root cause of defects or bugs found.</p>
+                                     <p>3. Scalability of tests as different systems are connected with different data transfer algorithms and implementations.</p>
+                                     <p>4. Determining and using appropriate test automation and monitoring tools </p>
+                                     <p>5. The possible combinations of tests can be enormous with multiple applications so meticulous test planning is required.</p>
+                                     <p>6. As the environment where testing is performed connecting two or more systems might be different than the developing environment of these
+                                         systems , so environment or network crash can make the testing difficult.</p>
+
+                                     <h4><b>Interoperability testing strategy for overcoming challenges</b></h4>
+                                     <p>1. In order to achieve the maximum test coverage, testing techniques like equivalence partitioning , boundary value analysis,
+                                         cause effect graph etc are really useful in tracing requirements to the appropriate test cases.</p>
+                                     <p>2. Analysing the past data about system crash or recovery time is useful.</p>
+                                     <p>3. Proper test planning after analysing different systems , their data semantics, data transfer algorithms, environments would ensure
+                                         good test coverage and more chances of success.</p>
+                                     </div>
+                                     <p></p>
+
+                                    </div>
+                    </div>
+                   <!-- end course content container -->
+               <div class="col-md-3">
+               <!-- start sidebar -->
+               <aside class="mu-sidebar" >
+                  <!-- start single sidebar-->
+                  <div class="mu-single-sidebar" >
+                    <h3>Levels of Interoperability testing</h3>
+                    <ul class="mu-sidebar-catg">
+                        <li><a href="#Data-type Interoperability" >Data-type Interoperability</a></li>
+                        <li><a href="#Physical Interoperability">Physical Interoperability</a></li>
+                        <li><a href="#Specification level Interoperability">Specification level Interoperability</a></li>
+                        <li><a href="#Semantic Interoperability">Semantic Interoperability</a></li>
+                    </ul>
+                  </div>
+                  <!-- end single sidebar-->
+                </aside>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+     </section>
+
+
+  <!-- Start footer -->
+  <footer id="mu-footer">
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+      <div class="container">
+        <div class="mu-footer-top-area">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">Meet the team</a></li>
+                 <!-- <li><a href="">Features</a></li>
+                  <li><a href="">Course</a></li>
+                  <li><a href="">Event</a></li>
+                  <li><a href="">Sitemap</a></li>-->
+                  <li><a href="">Terms Of Use</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contributions</h4>
+                <ul>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <!--<li><a href="">Download Files</a></li>
+                  <li><a href="">Latest Course</a></li>
+                  <li><a href="">Academic News</a></li>  -->                
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Feedback</h4>
+                <p>We would love to hear from you to improve</p>
+                <form class="mu-subscribe-form">
+                  <input type="email" placeholder="Type your Email">
+                  <button class="mu-subscribe-btn" type="submit">Send Email!</button>
+                </form>               
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contact Us</h4>
+                <address>
+                  <!--<p>P.O. Box 320, Ross, California 9495, USA</p>
+                  <p>Phone: (415) 453-1568 </p>-->
+                  <p>Website: www.testingguidance.com</p>
+                  <!--<p>Email: sendtomegha@gmail.com</p>-->
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+      <div class="container">
+        <div class="mu-footer-bottom-area">
+          <!--<p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>-->
+        </div>
+      </div>
+    </div>
+    <!-- end footer bottom -->
+  </footer>
+  <!-- End footer -->
+  
+  <!-- jQuery library -->
+  <script src="assets/js/jquery.min.js"></script>  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>   
+  <!-- Slick slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>  
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+  
+  
+  <!-- Custom js -->
+  <script src="assets/js/custom.js"></script> 
+
+  </body>
+</html>
