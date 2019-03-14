@@ -134,7 +134,7 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Interoperability Testing </h2>
+           <h2>Reliability Testing </h2>
            </div>
        </div>
      </div>
@@ -153,67 +153,90 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="mu-latest-course-single">
-                        <h3 id="Interoperability Testing"><b>What is Interoperability Testing</b></h3>
-                          <p>When we perform tests to validate interoperability of a software system, it is called as interoperability testing.
-                              Interoperability is basically the ability of the software product/component/system to interact with another product/component/system.
-                          During this interaction, there should be seamless communication between these two entities without any data loss or performance issues.
-                          These are the main aspects we test during interoperability testing. </p>
-                          <h4><b>Purpose of interoperability testing</b></h4>
-                          <p>1.The primary purpose is to make sure that the end to end functionality between the
-                          communicating entities are as per the required requirements or standards.</p>
-                          <p>2.The data should be routed back and forth between different entities without any loss of data or functionality.</p>
-                          <p>3.This testing helps in providing good accessibility resulting in obtaining good test results. </p>
-                          <h4><b>Example of interoperability testing</b></h4>
-                          <p>Let us take an example to understand it better. In our day to day life, we use internet banking for different banking needs. Many times, we transfer funds to accounts from different banks.
-                          For that purpose, we add payee and make the transfer without bothering how these different banks would make this transaction successful. It might be the case
-                          that these two banks have software on entirely different platforms, use altogether different architecture and implementation. As long as they are able to
-                          communicate to each other without any issues , preserve the data integrity and perform the intended function i.e. transfer of funds from one account to another, they are interoperable.
-                          From this example , we can understand how important this testing type is and thus lets explore it further.</p>
+                        <h3 id="Reliability Testing"><b>What is Reliability Testing</b></h3>
+                          <p>When we perform tests to validate reliability of a software product, it is called as reliability testing.
+                              Reliability is basically the ability of the software product to perform its required functions under designated conditions
+                              for a specific period of operations or time. As we know that reliability means safe,dependable, constant or trustworthy,
+                              the same features we test in the software product to ensure the product would work without fault/failures consistently in the stated
+                              environment. Reliability testing helps in finding issues in the software design and functionality.</p>
+                          <h4><b>Purpose of reliability testing</b></h4>
+                          <p> Reliability testing is performed to attain the following objectives:</p>
+                          <p>1.Structure of repeating failures can be discovered.</p>
+                          <p>2.The number of failures occurring in a specified amount of time are determined.</p>
+                          <p>3.The main driver of failure is located. </p>
+                          <p>4. After fixing of related defects, various modules of software application are re-tested.</p>
+                          <h4><b>Example of reliability testing</b></h4>
+                          <p>As reliability testing is a non-functional characteristic, it is expressed in the specifications or requirements as per its performance needs.
+                              For example, a reliability related requirement for a defibrillator ( medical apparatus to control heart fibrillation by giving shock to the chest wall or heart)
+                              is that it is reliable if 10 or less failures occur from 1500 shocks.</p>
+                          <h4><b>Probability of failure</b></h4>
+                          <p>While performing reliability testing, the probability that software might give some failure in a given time under a specified environment is
+                          calculated using the following formula </p>
+                          <p>Probability = Number of failing cases / Total number of cases under consideration</p>
                           <div class="mu-latest-course-single">
                               <figure class="mu-latest-course-img">
-                                  <a href="#"><img src="assets/img/concepts/inter1.png" alt="img"></a>
+                                  <a href="#"><img src="assets/img/concepts/relia1.png" alt="img"></a>
                               </figure>
                           </div>
-                          <h4><b>Levels of software interoperability testing</b></h4>
-                                     <h5 id="Data-type Interoperability"><b>1. Data-type Interoperability</b></h5>
-                                     <p>The data types, format of the data are validated in this testing across different systems . All the incoming and outgoing data from the other system or application
-                                         should be recognized and sustained accurately. In the banking example above, the amount transferred in numbers should be received in numbers only.</p>
-                          <h5 id="Physical Interoperability"><b>2. Physical Interoperability</b></h5>
-                                     <p>When we test communication between physical devices with software like USB port compatibility, data cable or HDMI port compatibility , then it comes under
-                                         physical interoperability testing. It ensures physical sufficiency to logically connect two devices.</p>
-                          <h5 id="Specification level Interoperability"><b>3. Specification level Interoperability</b></h5>
-                          <p>When we verify the device specifications like data format used between software systems etc then this is called as
-                                         Specification level testing.</p>
-                          <h5 id="Semantic Interoperability"><b>4. Semantic Interoperability</b></h5>
-                                     <p>When we test the data semantics or underlying algorithm, syntax of the program then this is called as
-                                         semantic level testing.</p>
-                                         <div class="mu-latest-course-single">
-                                         <figure class="mu-latest-course-img">
-                                             <a href="#"><img src="assets/img/concepts/opera3.png" alt="img"></a>
-                                         </figure>
-                                     </div>
-                                     <h4><b>Advantages of Interoperability testing</b></h4>
-                                     <p>1. The testing of communication between different systems or applications with different implementations or platforms provide confidence in the use of these systems.
-                                         Specially in the medical field, this holds an important role to ensure all different devices would work together as expected.</p>
-                                     <p>2. Interoperability testing ensures enhanced reliability for instance electric systems reliability by validating information flow between portions of the grid,
-                                         ability of power system components to work together effectively.</p>
+                          <h4><b>Types of reliability testing</b></h4>
+                                     <h5 id="Feature Testing"><b>1. Feature Testing</b></h5>
+                                     <p>The objective of the feature testing is to check the functionality of the software product and its features to ensure the following aspects</p>
+                          <p>1. Each software's operation is executed at least once.</p>
+                          <p>2. It is checked that each operation has proper execution.</p>
+                          <p>3. The interaction between two operations is minimised.</p>
+                          <h5 id="Load Test"><b>2. Load Testing</b></h5>
+                                     <p>After the feature testing, load testing is performed. During this, the performance of the system is checked against the maximum work load.
+                                         Normally the software systems perform as expected upto a certain level of workload and then the performance like response time
+                                         starts degrading. So, the workload where the software starts hanging or breaking down is identified with the help of load testing.</p>
+                          <h5 id="Regression test"><b>3. Regression testing</b></h5>
+                          <p>Whenever the software is updated because of defect fixes or addition of new functionality, regression testing is performed. The
+                              primary objective is to test that the new implementation or defect fixes have not introduced any new defects in the software and the
+                              existing functionality is still working fine.</p>
+                          <h4><b>Categories of reliability testing</b></h4>
+                          <p>Reliability testing is performed against different categories which are listed below</p>
+                          <h5 id="Modeling"><b>1. Modeling</b></h5>
+                                     <p>Software modeling techniques are used to develop the models which represent the desired behaviour of the system under test.
+                                     These models usually provide an abstract and partial presentation of the software's expected functional behavior which can be used
+                                     to obtain meaningful results. There can be different types of models for predicting reliability of the software</p>
+                          <p>1.Prediction Modeling : This uses historic data and usually created before the development or testing phases. It predicts the reliability of the software in future.</p>
+                          <p>2.Estimation Modeling : This uses current data from software development and used later in the software development cycle. It predicts the reliability for present time or for future.</p>
+                          <h5 id="Measurement"><b>2. Measurement</b></h5>
+                          <p>Reliability is measured primarily with the following parameters </p>
+                          <p>1.MTTF : Mean Time to failure : The time difference between two consecutive failures.</p>
+                          <p>2.MTTR : Mean time to repair : The time required to repair or fix a failure.</p>
+                          <p>3.MTBF : Mean time between failures : With the help of above two parameters, the reliability is measured as MTBF with the below formula</p>
+                          <p>  <b>MTBF = MTTF + MTTR</b></p>
+                          <p> With the above formula, the reliability is measured as a fractional number between 0 and 1.  The less this number, the more is the
+                          reliability of the system</p>
+                          <h5 id="Improvement"><b>3. Improvement</b></h5>
+                          <p>Improvement is another important aspect to be considered. As per the measurements and performance of the system,
+                          improvement areas are identified for software reliability</p>
+                          <div class="mu-latest-course-single">
+                              <figure class="mu-latest-course-img">
+                                  <a href="#"><img src="assets/img/concepts/reli2.png" alt="img"></a>
+                              </figure>
+                          </div>
+                          <h4><b>Approaches of reliability testing</b></h4>
+                          <p>There are different approaches to reliability testing that ensure maximum faults of the system are identified prior to the production release</p>
+                          <h5 id="Test-Retest Reliability"><b>1. Test-Retest Reliability</b></h5>
+                          <p>Here the software is tested and re-tested by using different testing techniques in a short span of time like few days or a week apart.
+                          The scores are stored to check the stability and consistency of software over a period of time.</p>
+                          <h5 id="Parallel Forms Reliability"><b>2. Parallel Forms Reliability</b></h5>
+                          <p> This testing is performed where there are different forms for the same functionality like different formats of the question papers.
+                          Two different forms are tested by two different groups in parallel. The results of these two tests are analysed for consistency.</p>
+                          <h5 id="Decision Consistency"><b>3. Decision Consistency</b></h5>
+                          <p>The results from the previous two approaches i.e. test-reset reliability and parallel forms reliability are evaluated
+                          to determine if these tests succeed or fail.</p>
+                          <p></p>
+                                     <h4><b>Advantages of reliability testing</b></h4>
+                                     <p>1. It helps in identifying faults and issues in the software product before it is release in production.</p>
+                                     <p>2. It validates the customer's reliability requirements and provide confidence in the product.</p>
+                                     <p>3. This testing is performed at various levels like component level, system level which can provide more reliability to the product.</p>
                                      <p></p>
-                                     <h4><b>Challenges of Interoperability testing</b></h4>
-                                     <p>1. The networking can be complex as two or more subsystems from different vendors need to be connected.</p>
-                                     <p>2. As different systems are involved, it becomes difficult to find out the root cause of defects or bugs found.</p>
-                                     <p>3. Scalability of tests as different systems are connected with different data transfer algorithms and implementations.</p>
-                                     <p>4. Determining and using appropriate test automation and monitoring tools </p>
-                                     <p>5. The possible combinations of tests can be enormous with multiple applications so meticulous test planning is required.</p>
-                                     <p>6. As the environment where testing is performed connecting two or more systems might be different than the developing environment of these
-                                         systems , so environment or network crash can make the testing difficult.</p>
-
-                                     <h4><b>Interoperability testing strategy for overcoming challenges</b></h4>
-                                     <p>1. In order to achieve the maximum test coverage, testing techniques like equivalence partitioning , boundary value analysis,
-                                         cause effect graph etc are really useful in tracing requirements to the appropriate test cases.</p>
-                                     <p>2. Analysing the past data about system crash or recovery time is useful.</p>
-                                     <p>3. Proper test planning after analysing different systems , their data semantics, data transfer algorithms, environments would ensure
-                                         good test coverage and more chances of success.</p>
-                                     </div>
+                                     <h4><b>Tools for reliability testing</b></h4>
+                                     <p> There are various tools available for reliability testing. Some of the common tools are Reliability Growth Analysis (RGA),
+                                         Reliability Centered Maintenance(RCM) and Reliability Life Data Analysis (WEIBULL++).</p>
+                                      </div>
                                      <p></p>
 
                                     </div>
@@ -224,12 +247,16 @@
                <aside class="mu-sidebar" >
                   <!-- start single sidebar-->
                   <div class="mu-single-sidebar" >
-                    <h3>Levels of Interoperability testing</h3>
+                    <h3>Related terminology</h3>
                     <ul class="mu-sidebar-catg">
-                        <li><a href="#Data-type Interoperability" >Data-type Interoperability</a></li>
-                        <li><a href="#Physical Interoperability">Physical Interoperability</a></li>
-                        <li><a href="#Specification level Interoperability">Specification level Interoperability</a></li>
-                        <li><a href="#Semantic Interoperability">Semantic Interoperability</a></li>
+                        <li><a href="#Feature Testing" >Feature Testing</a></li>
+                        <li><a href="#Load Test">Load Testing</a></li>
+                        <li><a href="#Regression test">Regression Testing</a></li>
+                        <li><a href="#Modeling">Modeling</a></li>
+                        <li><a href="#Measurement">Measuring reliability</a></li>
+                        <li><a href="#Test-Retest Reliability">Test-Retest Reliability</a></li>
+                        <li><a href="#Parallel Forms Reliability">Parallel Forms Reliability</a></li>
+                        <li><a href="#Decision Consistency">Decision Consistency</a></li>
                     </ul>
                   </div>
                   <!-- end single sidebar-->

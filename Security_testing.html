@@ -134,7 +134,7 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Interoperability Testing </h2>
+           <h2>Security Testing </h2>
            </div>
        </div>
      </div>
@@ -153,66 +153,90 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="mu-latest-course-single">
-                        <h3 id="Interoperability Testing"><b>What is Interoperability Testing</b></h3>
-                          <p>When we perform tests to validate interoperability of a software system, it is called as interoperability testing.
-                              Interoperability is basically the ability of the software product/component/system to interact with another product/component/system.
-                          During this interaction, there should be seamless communication between these two entities without any data loss or performance issues.
-                          These are the main aspects we test during interoperability testing. </p>
-                          <h4><b>Purpose of interoperability testing</b></h4>
-                          <p>1.The primary purpose is to make sure that the end to end functionality between the
-                          communicating entities are as per the required requirements or standards.</p>
-                          <p>2.The data should be routed back and forth between different entities without any loss of data or functionality.</p>
-                          <p>3.This testing helps in providing good accessibility resulting in obtaining good test results. </p>
-                          <h4><b>Example of interoperability testing</b></h4>
-                          <p>Let us take an example to understand it better. In our day to day life, we use internet banking for different banking needs. Many times, we transfer funds to accounts from different banks.
-                          For that purpose, we add payee and make the transfer without bothering how these different banks would make this transaction successful. It might be the case
-                          that these two banks have software on entirely different platforms, use altogether different architecture and implementation. As long as they are able to
-                          communicate to each other without any issues , preserve the data integrity and perform the intended function i.e. transfer of funds from one account to another, they are interoperable.
-                          From this example , we can understand how important this testing type is and thus lets explore it further.</p>
+                        <h3 id="Security Testing"><b>What is Security Testing</b></h3>
+                          <p>When we perform tests on a software to uncover vulnerabilities,threats,risks of the system and to find out that its data and resources
+                          are safe from possible intruders, then it is known as Security testing. In today's world, where everything is available online, most of the business
+                          transactions are performed online like online shopping, banking, stock trading , security testing has become absolute necessary to identify threats and measure vulnerabilities of the system .
+                              which can cause big losses like loss of reputation, revenue or confidential information.
+                              The security risks in the system are detected and fixed through coding by developers as a result of security testing.
+                              In the cyber-world, there are many hackers and pranksters who intend to break the system and may
+                          acquire confidential information so it is the need of the time to use applications and systems which we can trust upon.
+                          For desktop applications also, the security factor is really important.</p>
+                          <h4><b>Focus areas of Security testing</b></h4>
+                          <p>For web applications or websites, there are mainly four focus areas to be considered</p>
+                          <p>1.<b>Network Security:</b> The network infrastructure like resources or policies might have vulnerabilities which can be uncovered .</p>
+                          <p>2.<b>Client-side application security:</b> This is to ensure the manipulation of client browser or components can't be done.</p>
+                          <p>3.<b>Server-side application security:</b> This is to ensure that server code and technologies are able to oppose any intrusions.</p>
+                          <p>4.<b> System-software security :</b> The weaknesses in the application's software like operating system, database systems etc are assessed.</p>
+
+                          <p>Let us take an example to understand it better. Through internet banking application, when we make an online payment, we can try to use the back arrows
+                              to see if still it displays the account information or any account details. Such simple tests can expose the security threats in our application.</p>
+
                           <div class="mu-latest-course-single">
                               <figure class="mu-latest-course-img">
-                                  <a href="#"><img src="assets/img/concepts/inter1.png" alt="img"></a>
+                                  <a href="#"><img src="assets/img/concepts/security1.png" alt="img"></a>
                               </figure>
                           </div>
-                          <h4><b>Levels of software interoperability testing</b></h4>
-                                     <h5 id="Data-type Interoperability"><b>1. Data-type Interoperability</b></h5>
-                                     <p>The data types, format of the data are validated in this testing across different systems . All the incoming and outgoing data from the other system or application
-                                         should be recognized and sustained accurately. In the banking example above, the amount transferred in numbers should be received in numbers only.</p>
-                          <h5 id="Physical Interoperability"><b>2. Physical Interoperability</b></h5>
-                                     <p>When we test communication between physical devices with software like USB port compatibility, data cable or HDMI port compatibility , then it comes under
-                                         physical interoperability testing. It ensures physical sufficiency to logically connect two devices.</p>
-                          <h5 id="Specification level Interoperability"><b>3. Specification level Interoperability</b></h5>
-                          <p>When we verify the device specifications like data format used between software systems etc then this is called as
-                                         Specification level testing.</p>
-                          <h5 id="Semantic Interoperability"><b>4. Semantic Interoperability</b></h5>
-                                     <p>When we test the data semantics or underlying algorithm, syntax of the program then this is called as
-                                         semantic level testing.</p>
-                                         <div class="mu-latest-course-single">
+                          <h4><b>Types and techniques of Security Testing</b></h4>
+                          <p> There are numerous types and techniques of security testing . The most important ones are discussed below</p>
+                                     <h5 id="Vulnerability Scanning"><b>1. Vulnerability Scanning</b></h5>
+                                     <p>The use of automated computer program to scan a system to identify security vulnerabilities in a network, is vulnerability scanning.
+                                         This indicates the locations where a system can be threatened or exploited. There is no manual intervention or verification and the risk levels are set
+                                     automatically through the tool.</p>
+                          <h5 id="Security Scanning"><b>2. Security Scanning</b></h5>
+                                     <p>Security scanning is done with the help of manual or/and automated programs to identify potential security vulnerabilities in the network,
+                                         operating system or web application. It also involves providing solutions for reducing the threats and risks.</p>
+                          <h5 id="Penetration testing"><b>3. Penetration testing</b></h5>
+                          <p>When we try to simulate the attack on the application from a malicious hacker, it is called as penetration testing. It helps in analysing potential
+                          vulnerabilities of a system from external hacking by gaining access to its information,data, functions and affecting its data integrity.</p>
+                          <h5 id="Ethical hacking"><b>4. Ethical hacking</b></h5>
+                                     <p>The hacking of the organization's software systems  or network to expose security flaws in the system is ethical hacking. The hacker
+                                     tries to search for vulnerabilities by bypassing the system security. These ethical hackers then suggest changes to the system to make them
+                                     less likely to be penetrated by outside hackers</p>
+                          <h5 id="Risk Assessment"><b>5. Risk Assessment</b></h5>
+                          <p>The security risks of the organization are analysed and classified as high, medium and low. This is done with the help of various interviews and discussions within the organization.
+                              Afterwards, controls and measures are recommended to reduce these risks</p>
+                          <div class="mu-latest-course-single">
+                              <figure class="mu-latest-course-img">
+                                  <a href="#"><img src="assets/img/concepts/security2.png" alt="img"></a>
+                              </figure>
+                          </div>
+                          <h5 id="Security Auditing"><b>6. Security Auditing</b></h5>
+                          <p>It involves an internal inspection of the company's information system, applications and operating systems for finding security flaws. In this case, even line by line inspection of code can also be performed</p>
+                          <h5 id="Posture Assessment"><b>7. Posture Assessment</b></h5>
+                          <p>This involves assessing the overall security structure of the organization by combining ethical hacking,security scanning and risk assessments.</p>
+
+                          <h5 id="SQL injection"><b>8. SQL Injection</b></h5>
+                          <p>SQL injection attacks are the most common application attack techniques where malicious SQL statements are inserted into
+                              entry fields for execution. Doing this, the hacker or attacker can gain access to critical information from the server database.
+                          The input fields like text boxes, comments etc should be properly handled in the code for preventing SQL injections. This includes handling special characters or defining input length small
+                          to restrict input of malicious script.</p>
+                          <h5 id="Cross site scripting"><b>9. Cross site scripting (XSS)</b></h5>
+                          <p>In Cross site scripting, the hackers or attackers inject client-side script into web pages viewed by different users and mislead the user into clicking
+                              on that URL. Once this code is executed by the other browser of the user, it can perform totally unexpected actions like
+                              gaining access to personal data, changing behaviour of the website etc.
+                              While performing security testing for this aspect, the tester need to check that any HTML or script is not accepted by the application.
+                              Cross site scripting testing is done for >, <, ' signs. </p>
+                          <h5 id="URL Manipulation"><b>10. URL Manipulation</b></h5>
+                          <p>In the applications where HTTP GET method is used for information flow from client and server, hackers try to gain access to the important information
+                              by manipulating the website URL query strings which contain information in its parameters. In order to test it, the tester
+                              needs to modify a parameter value in the query string and check if the sever accepts it. Additionally, ad hoc testing can be done
+                          by testing random/encoded data which is included in requests or parameters. </p>
+                          <div class="mu-latest-course-single">
                                          <figure class="mu-latest-course-img">
-                                             <a href="#"><img src="assets/img/concepts/opera3.png" alt="img"></a>
+                                             <a href="#"><img src="assets/img/concepts/security3.png" alt="img"></a>
                                          </figure>
                                      </div>
-                                     <h4><b>Advantages of Interoperability testing</b></h4>
-                                     <p>1. The testing of communication between different systems or applications with different implementations or platforms provide confidence in the use of these systems.
-                                         Specially in the medical field, this holds an important role to ensure all different devices would work together as expected.</p>
-                                     <p>2. Interoperability testing ensures enhanced reliability for instance electric systems reliability by validating information flow between portions of the grid,
-                                         ability of power system components to work together effectively.</p>
-                                     <p></p>
-                                     <h4><b>Challenges of Interoperability testing</b></h4>
-                                     <p>1. The networking can be complex as two or more subsystems from different vendors need to be connected.</p>
-                                     <p>2. As different systems are involved, it becomes difficult to find out the root cause of defects or bugs found.</p>
-                                     <p>3. Scalability of tests as different systems are connected with different data transfer algorithms and implementations.</p>
-                                     <p>4. Determining and using appropriate test automation and monitoring tools </p>
-                                     <p>5. The possible combinations of tests can be enormous with multiple applications so meticulous test planning is required.</p>
-                                     <p>6. As the environment where testing is performed connecting two or more systems might be different than the developing environment of these
-                                         systems , so environment or network crash can make the testing difficult.</p>
-
-                                     <h4><b>Interoperability testing strategy for overcoming challenges</b></h4>
-                                     <p>1. In order to achieve the maximum test coverage, testing techniques like equivalence partitioning , boundary value analysis,
-                                         cause effect graph etc are really useful in tracing requirements to the appropriate test cases.</p>
-                                     <p>2. Analysing the past data about system crash or recovery time is useful.</p>
-                                     <p>3. Proper test planning after analysing different systems , their data semantics, data transfer algorithms, environments would ensure
-                                         good test coverage and more chances of success.</p>
+                                     <h4><b>Advantages of Security testing</b></h4>
+                                     <p>1. The different attributes of security testing like Authentication,Authorization,Confidentiality,Availability,Integrity,
+                                         Non-repudiation,Resilience indicates the advantages of security testing.</p>
+                                     <p>2. Security testing helps in gaining customer trust and avoids loss of revenue, downtime against security threats.</p>
+                                     <p> Some of the widely used security testing tools are mentioned below in the picture for quick reference. </p>
+                          <div class="mu-latest-course-single">
+                              <figure class="mu-latest-course-img">
+                                  <a href="#"><img src="assets/img/concepts/security4.png" alt="img"></a>
+                              </figure>
+                          </div>
                                      </div>
                                      <p></p>
 
@@ -224,12 +248,18 @@
                <aside class="mu-sidebar" >
                   <!-- start single sidebar-->
                   <div class="mu-single-sidebar" >
-                    <h3>Levels of Interoperability testing</h3>
+                    <h3>Types of Security testing</h3>
                     <ul class="mu-sidebar-catg">
-                        <li><a href="#Data-type Interoperability" >Data-type Interoperability</a></li>
-                        <li><a href="#Physical Interoperability">Physical Interoperability</a></li>
-                        <li><a href="#Specification level Interoperability">Specification level Interoperability</a></li>
-                        <li><a href="#Semantic Interoperability">Semantic Interoperability</a></li>
+                        <li><a href="#Vulnerability Scanning" >Vulnerability Scanning</a></li>
+                        <li><a href="#Security Scanning">Security Scanning</a></li>
+                        <li><a href="#Penetration testing">Penetration testing</a></li>
+                        <li><a href="#Ethical hacking">Ethical hacking</a></li>
+                        <li><a href="#Risk Assessment">Risk Assessment</a></li>
+                        <li><a href="#Security Auditing">Security Auditing</a></li>
+                        <li><a href="#Posture Assessment">Posture Assessment</a></li>
+                        <li><a href="#SQL injection">SQL injection</a></li>
+                        <li><a href="#Cross site scripting">Cross site scripting (XSS)</a></li>
+                        <li><a href="#URL Manipulation">URL Manipulation</a></li>
                     </ul>
                   </div>
                   <!-- end single sidebar-->

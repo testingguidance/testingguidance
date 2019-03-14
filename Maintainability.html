@@ -134,7 +134,7 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Interoperability Testing </h2>
+           <h2>Maintainability Testing </h2>
            </div>
        </div>
      </div>
@@ -153,66 +153,50 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="mu-latest-course-single">
-                        <h3 id="Interoperability Testing"><b>What is Interoperability Testing</b></h3>
-                          <p>When we perform tests to validate interoperability of a software system, it is called as interoperability testing.
-                              Interoperability is basically the ability of the software product/component/system to interact with another product/component/system.
-                          During this interaction, there should be seamless communication between these two entities without any data loss or performance issues.
-                          These are the main aspects we test during interoperability testing. </p>
-                          <h4><b>Purpose of interoperability testing</b></h4>
-                          <p>1.The primary purpose is to make sure that the end to end functionality between the
-                          communicating entities are as per the required requirements or standards.</p>
-                          <p>2.The data should be routed back and forth between different entities without any loss of data or functionality.</p>
-                          <p>3.This testing helps in providing good accessibility resulting in obtaining good test results. </p>
-                          <h4><b>Example of interoperability testing</b></h4>
-                          <p>Let us take an example to understand it better. In our day to day life, we use internet banking for different banking needs. Many times, we transfer funds to accounts from different banks.
-                          For that purpose, we add payee and make the transfer without bothering how these different banks would make this transaction successful. It might be the case
-                          that these two banks have software on entirely different platforms, use altogether different architecture and implementation. As long as they are able to
-                          communicate to each other without any issues , preserve the data integrity and perform the intended function i.e. transfer of funds from one account to another, they are interoperable.
-                          From this example , we can understand how important this testing type is and thus lets explore it further.</p>
+                        <h3 id="Reliability Testing"><b>What is Maintainability Testing</b></h3>
+                          <p>When we perform tests to determine the maintainability of a software product, it is called as maintainability testing.
+                              Maintainability is basically the ease with which a software application or product can be updated to correct defects,
+                              changed to add new requirements, changed to make future requirements easier or can adapt to a modified environment.
+                          As the software should have the flexibility to change throughout the software life cycle specially in today's agile world , maintainability
+                          becomes a very important non functional characteristic.</p>
+
+                          <h4><b>Categories of maintainability testing</b></h4>
+                          <p> Product maintainability needs to be tested against various categories which are listed below:</p>
+                          <p>1.<b>Corrective maintenance:</b> the system's maintainability is measured in terms of time taken in identifying and fixing defects in it.</p>
+                          <p>2.<b>Perfective maintenance:</b> the system's maintainability is measured in terms of efforts required for system's modifications and improvements.</p>
+                          <p>3.<b>Adaptive maintenance:</b> the system's maintainability is measured in terms of efforts required for adapting the changes in the environment.</p>
+                          <p>4.<b>Preventive maintenance:</b> covers the actions for reducing future maintenance costs.</p>
+
+                          <h4><b>Attributes of maintainability testing</b></h4>
+                          <p> The following attributes are taken into account for maintainability:</p>
+                          <p>1.<b>Analyzability:</b> This involves estimating the efforts for tracing defects along with the areas which require change in the system.</p>
+                          <p>2.<b>Changeability</b> This is the software's ability to change.</p>
+                          <p>3.<b>Stability</b> This is the software's ability to remain stable after undergoing changes.</p>
+                          <p>4.<b>Testability</b> This is the testing effort required to validate the updated system.</p>
+                          <p>5.<b>Maintainability Compliance</b> needs to be met as per the regulations.</p>
                           <div class="mu-latest-course-single">
                               <figure class="mu-latest-course-img">
-                                  <a href="#"><img src="assets/img/concepts/inter1.png" alt="img"></a>
+                                  <a href="#"><img src="assets/img/concepts/maintain.png" alt="img"></a>
                               </figure>
                           </div>
-                          <h4><b>Levels of software interoperability testing</b></h4>
-                                     <h5 id="Data-type Interoperability"><b>1. Data-type Interoperability</b></h5>
-                                     <p>The data types, format of the data are validated in this testing across different systems . All the incoming and outgoing data from the other system or application
-                                         should be recognized and sustained accurately. In the banking example above, the amount transferred in numbers should be received in numbers only.</p>
-                          <h5 id="Physical Interoperability"><b>2. Physical Interoperability</b></h5>
-                                     <p>When we test communication between physical devices with software like USB port compatibility, data cable or HDMI port compatibility , then it comes under
-                                         physical interoperability testing. It ensures physical sufficiency to logically connect two devices.</p>
-                          <h5 id="Specification level Interoperability"><b>3. Specification level Interoperability</b></h5>
-                          <p>When we verify the device specifications like data format used between software systems etc then this is called as
-                                         Specification level testing.</p>
-                          <h5 id="Semantic Interoperability"><b>4. Semantic Interoperability</b></h5>
-                                     <p>When we test the data semantics or underlying algorithm, syntax of the program then this is called as
-                                         semantic level testing.</p>
-                                         <div class="mu-latest-course-single">
-                                         <figure class="mu-latest-course-img">
-                                             <a href="#"><img src="assets/img/concepts/opera3.png" alt="img"></a>
-                                         </figure>
-                                     </div>
-                                     <h4><b>Advantages of Interoperability testing</b></h4>
-                                     <p>1. The testing of communication between different systems or applications with different implementations or platforms provide confidence in the use of these systems.
-                                         Specially in the medical field, this holds an important role to ensure all different devices would work together as expected.</p>
-                                     <p>2. Interoperability testing ensures enhanced reliability for instance electric systems reliability by validating information flow between portions of the grid,
-                                         ability of power system components to work together effectively.</p>
-                                     <p></p>
-                                     <h4><b>Challenges of Interoperability testing</b></h4>
-                                     <p>1. The networking can be complex as two or more subsystems from different vendors need to be connected.</p>
-                                     <p>2. As different systems are involved, it becomes difficult to find out the root cause of defects or bugs found.</p>
-                                     <p>3. Scalability of tests as different systems are connected with different data transfer algorithms and implementations.</p>
-                                     <p>4. Determining and using appropriate test automation and monitoring tools </p>
-                                     <p>5. The possible combinations of tests can be enormous with multiple applications so meticulous test planning is required.</p>
-                                     <p>6. As the environment where testing is performed connecting two or more systems might be different than the developing environment of these
-                                         systems , so environment or network crash can make the testing difficult.</p>
+                          <h4><b>Testing techniques for maintainability testing</b></h4>
+                          <p>Maintainability testing can be performed by applying either static testing techniques or dynamic testing techniques</p>
+                          <h5 id="Static Testing"><b>1. Static Testing</b></h5>
+                          <p>For effective maintainability testing, static analysis and reviews should be included in the test plans. Some defects can be captured
+                              during code walk-through and inspection which might get missed during dynamic testing. The code structure and documentation of the
+                          software development process are checked in static testing with the help of inspection,reviews or walk-through</p>
+                          <h5 id="Dynamic Testing"><b>2. Dynamic Testing</b></h5>
+                          <p>Tests are executed to validate the different attributes mentioned in the above sections. After the software is modified for
+                          defect fixes, new functionality or changes in functionality, these changes are validated against conformance to requirements.</p>
 
-                                     <h4><b>Interoperability testing strategy for overcoming challenges</b></h4>
-                                     <p>1. In order to achieve the maximum test coverage, testing techniques like equivalence partitioning , boundary value analysis,
-                                         cause effect graph etc are really useful in tracing requirements to the appropriate test cases.</p>
-                                     <p>2. Analysing the past data about system crash or recovery time is useful.</p>
-                                     <p>3. Proper test planning after analysing different systems , their data semantics, data transfer algorithms, environments would ensure
-                                         good test coverage and more chances of success.</p>
+
+                           <h4><b>Advantages of maintainability testing</b></h4>
+                                     <p>1. Every software product undergoes changes during development or post production against defect fixes or new functionality,
+                                         maintainability testing ensure that the product would be able to function well post changes</p>
+                                     <p>2. The static testing used verify that algorithms are optimised, system is properly distributed, different standards
+                                         for database approach, structured programming and user interfaces are properly followed. This helps in uncovering critical defects which
+                                         help in maintaining and expanding the software in the long run.</p>
+                                     <p></p>
                                      </div>
                                      <p></p>
 
@@ -224,13 +208,11 @@
                <aside class="mu-sidebar" >
                   <!-- start single sidebar-->
                   <div class="mu-single-sidebar" >
-                    <h3>Levels of Interoperability testing</h3>
+                    <h3>Maintainability testing</h3>
                     <ul class="mu-sidebar-catg">
-                        <li><a href="#Data-type Interoperability" >Data-type Interoperability</a></li>
-                        <li><a href="#Physical Interoperability">Physical Interoperability</a></li>
-                        <li><a href="#Specification level Interoperability">Specification level Interoperability</a></li>
-                        <li><a href="#Semantic Interoperability">Semantic Interoperability</a></li>
-                    </ul>
+                        <li><a href="#Static Testing" >Static Testing</a></li>
+                        <li><a href="#Dynamic Testing">Dynamic Testing</a></li>
+                        </ul>
                   </div>
                   <!-- end single sidebar-->
                 </aside>
